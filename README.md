@@ -1,5 +1,10 @@
 # Chess.php
 
+This project is a fork of [ryanhs/chess.php](https://github.com/ryanhs/chess.php), which is abandonned. chess.php itself was a port of [chess.js](https://github.com/jhlywa/chess.js). Main changes compared to the original ryanhs project are:
+- It is compatible with PHP 7.4 without deprecations.
+- PHP Unit has been updated to version 9
+- The documentation has been imported right in the project
+
 chess.php is a PHP chess library that is used for chess move
 generation/validation, piece placement/movement, and check/checkmate/stalemate
 detection - basically everything but the AI.
@@ -12,24 +17,17 @@ NOTE: this is a port of [chess.js](https://github.com/jhlywa/chess.js) for php
 
 ## Installation
 
-use composer with `composer require ryanhs/chess.php`   
+use composer with `composer require aglaia-resident/chess.php`   
 or put in your composer.json  
 ```
 "require": {
-	"ryanhs/chess.php": "^1.0"
+	"aglaia-resident/chess.php": "^1.0"
 }
 ```
 
 
 if you doesn't know composer, its a really usefull tools in php for package management,   
 try to learn composer [here](https://getcomposer.org/doc/00-intro.md)
-
-
-## Coding Style
-about coding style, naming system..
-because this is a PHP, i try to stick to use PHP-PSR, like game_over() become gameOver()  
-
-just keep in mind, any function name transformed into camelCase
 
 ## Example Code
 The code below plays a complete game of chess ... randomly.
@@ -50,23 +48,46 @@ while (!$chess->gameOver()) {
 echo $chess->ascii() . PHP_EOL;
 ```
 
-## Chess.js
-you can check original chess.js [here](https://github.com/jhlywa/chess.js)
+## Documentation Summary
 
+### Common
+- [Clear](doc/common/clear.md)
+- [Constructor](doc/common/constructor.md)
+- [Print Board (ASCII)](doc/common/print-board.md)
 
-## Chess.php documentation
+### FEN
+- [FEN generation](doc/fen/generation.md)
+- [FEN load](doc/fen/load.md)
+- [FEN validation](doc/fen/validation.md)
 
-you can check it here: [https://ryanhs.github.io/chess.php](https://ryanhs.github.io/chess.php)
+### MISC
+- [Square Color ?](doc/misc/square-color.md)
+- [Header ?](doc/misc/header.md)
+- [History ?](doc/misc/history.md)
 
-## BUGS
+### MOVE
+- [Get all possible moves](doc/move/get-all-possible-moves.md)
+- [Move](doc/move/move.md)
+- [Undo :-p](doc/move/undo.md)
 
--
+### PGN
+- [PGN generation](doc/pgn/generation.md)
+- [PGN load](doc/pgn/load.md)
+- [PGN parse](doc/pgn/parse.md)
+- [PGN validation](doc/pgn/validation.md)
 
-## TODO
+### PIECE PLACEMENT
+- [Get](doc/piece-placement/get.md)
+- [Put](doc/piece-placement/put.md)
+- [Remove](doc/piece-placement/remove.md)
 
--
+### STATUS
+- [Game Over ?](doc/status/game-over.md)
+- [Half Moves Exceeded ?](doc/status/half-moves-exceeded.md)
+- [Check ?](doc/status/check.md)
+- [Checkmate ?](doc/status/checkmate.md)
+- [Draw ?](doc/status/draw.md)
+- [Stalemate ?](doc/status/stalemate.md)
+- [Threefold Repetition ?](doc/status/threefold-repetition.md)
+- [Insufficient Material ?](doc/status/insufficient-material.md)
 
-## MAINTAINER/COLLABORATOR NEEDED
-
-As this project **not** in heavy development state, a maintainer/collaborator needed.  
-If you interested to become a collaborator, please tell me. :-)

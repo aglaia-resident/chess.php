@@ -1,21 +1,26 @@
 {
-    "name": "ryanhs/chess.php",
+    "name": "aglaia-resident/chess.php",
     "type": "library",
-    "description": "chess.php is a PHP chess library that is used for chess move generation/validation, piece placement/movement, and check/checkmate/stalemate detection - basically everything but the AI. NOTE: this is a port of chess.js for php",
+    "description": "Fork of ryanhs/chess.php. chess.php is a PHP chess library that is used for chess move generation/validation, piece placement/movement, and check/checkmate/stalemate detection - basically everything but the AI. NOTE: this is a port of chess.js for php",
     "license": "MIT",
     "authors": [
         {
             "name": "ryan hs",
             "email": "mr.ryansilalahi@gmail.com"
+        },
+        {
+            "name": "Aglaia",
+            "email": "aglaia@noemail.com"
         }
     ],
     "require": {
-        "php": "^7.1"
+        "php": "^7.4"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^2.14",
-        "johnkary/phpunit-speedtrap": "^3.0",
-        "phpunit/phpunit": "^7.5"
+        "friendsofphp/php-cs-fixer": "^2.15",
+        "johnkary/phpunit-speedtrap": "^3.1",
+        "phpunit/phpunit": "^9",
+        "dms/phpunit-arraysubset-asserts": "^0.2.0"
     },
     "autoload": {
         "psr-4": {

@@ -9,11 +9,7 @@ chess.php is a PHP chess library that is used for chess move
 generation/validation, piece placement/movement, and check/checkmate/stalemate
 detection - basically everything but the AI.
 
-NOTE: this is a port of [chess.js](https://github.com/jhlywa/chess.js) for php  
-
-[![Latest Stable Version](https://poser.pugx.org/ryanhs/chess.php/v/stable)](https://packagist.org/packages/ryanhs/chess.php)
-[![Build Status](https://travis-ci.org/ryanhs/chess.php.svg?branch=master)](https://travis-ci.org/ryanhs/chess.php)
-[![MIT License](https://poser.pugx.org/ryanhs/chess.php/license)](https://packagist.org/packages/ryanhs/chess.php)  
+NOTE: this is a port of [chess.js](https://github.com/jhlywa/chess.js) for php   
 
 ## Installation
 
@@ -21,7 +17,7 @@ use composer with `composer require aglaia-resident/chess.php`
 or put in your composer.json  
 ```
 "require": {
-	"aglaia-resident/chess.php": "^1.0"
+	"aglaia-resident/chess.php": "^2.0"
 }
 ```
 
